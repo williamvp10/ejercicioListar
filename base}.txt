@@ -1,0 +1,17 @@
+drop database DB;
+create database DB;
+use DB;
+create table personas
+(
+id int primary key not null,
+nombre varchar(30) not null,
+apellido varchar(30) not null,
+celular varchar(30) not null
+); 
+insert into personas(id,nombre,apellido,celular) values
+(1,'william','Vasquez', 3008009192),
+(2,'german','espitia', 3219790056),
+(3,'germann','espitiaa', 3219790057);
+
+
+SELECT * FROM personas;
